@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    consumer:
+      group-id: midas-core-group
+      auto-offset-reset: earliest
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    properties:
+      spring.json.trusted.packages: com.jpmc.midascore
+general:
+  kafka-topic: midas-transactions
